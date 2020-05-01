@@ -1,3 +1,4 @@
+from app import App
 from flask import Flask
 from config import config_options
 from flask_bootstrap import Bootstrap
@@ -17,7 +18,7 @@ def create_app(config_name):
 
     # Initializing flask extensions
     bootstrap.init_app(app)
-    from .requests import configure_request
+    from .request import configure_request
     configure_request(app)
     # Will add the views and forms
 

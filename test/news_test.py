@@ -12,7 +12,7 @@ class NewsTest(unittest.TestCase):
         Set up method that will run before every Test
         '''
 
-        self.new_News = News(12,'Bbc','Good news','https://www.aftenposten.no,8-12-200,)
+        self.new_News = News(12,'Bbc','Good news','https://www.aftenposten.no,8-12-200')
 
 
     def test_instance(self):
