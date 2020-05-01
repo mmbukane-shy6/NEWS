@@ -1,1 +1,59 @@
-<h1> Hello World </h1>
+
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>News Highlight application</title>
+    {% endif %}
+</head>
+<body>
+
+        {% block content %}
+
+    <h1>Welcome To The News Highlight</h1>
+    <h3>Here are News From different sources</h3>
+
+    
+          <div class="container">
+                 
+                <div class="row">
+                        <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                            <ul id="lisu">
+                            {% for latest_news in  latest%}
+                          {{latest_news.name}}
+                          <br>
+                          {{latest_news.description}}
+                            <br>
+                            <a href="{{latest_news.url}}"
+                                ><button class="btn btn-sm btn-outline-info">Read Here</button></a
+                              ><br><br>
+                              {% endfor %}
+                            </ul>
+                        </div>
+                    <div class="col-md-2"></div>
+                </div>
+        
+            </div>
+     
+    {% endblock %}
+    <ul>
+            {{ macro.displayMovieList(latest)}}
+    </ul>
+    
+    {% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    
+{% endblock %}
+</body>
+</html>
