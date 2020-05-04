@@ -19,7 +19,7 @@ With the application, a user will be able to:
 
 ### BDD
 
-- Clone this repository to your local computer.https://github.com/Saintiemonte10/News_Highlight.git
+- Clone this repository to your local computer.https://github.com/mmbukane-shy6/NEWS-APP.git
 
 1. Ensure you have python3.6 installed in your computer.
 2. From the terminal navigate to the cloned project folder.
