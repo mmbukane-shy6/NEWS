@@ -52,8 +52,6 @@
     
     {% block styles%}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    
-{% endblock %}
+    <link rel="stylesheet" href="{{url_for('static',filename='/static/static/css/index.css')}}"> {% endblock %}
 </body>
 </html>
