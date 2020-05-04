@@ -1,10 +1,10 @@
-*{
+/* *{
    
     background-image: url('https://st4.depositphotos.com/5727474/19939/v/600/depositphotos_199395304-stock-video-global-earth-rotating-digital-world.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     color: white;
-}
+} */
 
 .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(255, 255, 255, 0.9);
